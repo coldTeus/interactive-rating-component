@@ -1,0 +1,135 @@
+// Colors
+
+@color-primary-orange: hsl(25, 97%, 53%); // Primary Orange
+@color-white: hsl(0, 0%, 100%); // Neutral White
+@color-light-grey: hsl(217, 12%, 63%); // Neutral Light Grey
+@color-medium-grey: hsl(216, 12%, 54%); // Neutral Medium Grey
+@color-blue-medium: hsl(213deg 17% 22%); // Neutral Medium Blue
+@color-dark-blue: hsl(213, 19%, 18%); // Neutral Dark Blue
+@color-very-dark-blue: hsl(216, 12%, 8%); // Neutral Very Dark Blue
+
+// Typography
+
+@font-size-p: 15px; // Paragraph size font
+@font-size-circle: 18px; // Paragraph size font
+@font-size-h1: 28px; // H1 size font
+@font-family: 'Overpass', sans-serif; // Family font size p
+@font-weight-4: 400; // Weight 400 font 
+@font-weight-7: 700; // Weight 700 font
+
+// MEDIA
+
+// CSS resets
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// CSS global
+
+body {
+    background-color: @color-very-dark-blue;
+    font-family: @font-family;
+}
+
+h1 {
+    color: @color-white;
+    font-size: @font-size-h1;
+    padding: 25px 0px 10px 0px;
+    font-weight: @font-weight-7;
+}
+
+p {
+    color: @color-light-grey;
+    font-size: @font-size-p;
+    font-weight: @font-weight-4;
+    line-height: 21px;
+}
+
+// Container
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+
+    #box {
+        text-align: left;
+        background-color: @color-dark-blue;
+        width: 30%;
+        padding: 50px 30px 50px 30px;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    .image-cropper {
+        display: grid;
+        width: 55px;
+        height: 55px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: hsl(213, 17%, 22%);
+        align-items: center;
+    }
+    img {
+        display: grid;
+        margin: 0 auto;
+        height: 35%;
+        width: auto;
+    }
+    .circles {
+        padding: 25px 0px 25px 0px;
+    }
+    span.circle {
+        background: hsl(213, 17%, 22%);
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        color: hsl(216, 12%, 54%);
+        display: inline-block;
+        font-weight: @font-weight-7;
+        font-size: @font-size-circle;
+        line-height: 55px;
+        margin-right: 16px;
+        text-align: center;
+        width: 55px;
+        cursor: pointer;
+    }
+    span.circle:hover {
+        background: @color-light-grey;
+        color: @color-white;
+        transition: 0.9s;
+    }
+    input[type="submit"] {
+        background-color: @color-primary-orange;
+        color: @color-white;
+        font-family: @font-family;
+        font-size: 15px;
+        font-weight: @font-weight-7;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        padding: 15px 0px 15px 0px;
+        width: 100%;
+        border-radius: 40px;
+        letter-spacing: 2px;
+        border: none;
+        cursor: pointer;
+    }    
+    input[type="submit"]:hover {
+        background-color: @color-white;
+        color: @color-primary-orange;
+        transition: 0.9s;
+    }
+}
+.attribution {
+    text-align: center;
+    background-color: @color-white;
+    font-size: 10px;
+}
