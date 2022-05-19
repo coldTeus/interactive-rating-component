@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+    <!-- Rating state start -->
+    <div id="box">
+        <div class="box-content">
+            <div class="star-img"><img src="assets/img/icon-star.svg" alt=""></div>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve
+                our offering!</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="box-thanks" style="display: none;">
+        <div class="box-content-thanks">
+            <div class="thank-img"><img src="assets/img/illustration-thank-you.svg" alt=""></div>
+            <div class="i-select">
+                <p>You selected<div id="numberselected"></div> out of 5</p>
+            </div>
+            <h1>Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>
+    </div>
+    <!-- Thank you state end -->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/coldTeus">coldteus</a>.
+    </div>
+</body>
+
+</html>
